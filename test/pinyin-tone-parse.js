@@ -69,6 +69,18 @@ const testCasesValid = [
         text: 'Ni3 ne?',
         result: [['Ni', 3], ' ', ['ne', 5], '?'],
     },
+    {
+        options: {},
+        text: 'Yě kěyǐ.',
+        result: [['Yě', null], ' ', ['kěyǐ', null], '.'],
+    },
+    {
+        options: {},
+        text: 'Nǐ yao4 bu4yào wǒ de gou3?',
+        result: [
+            ['Nǐ', null], ' ', ['yao', 4], ' ', ['bu', 4], ['yào', null], ' ',
+            ['wǒ', null], ' ', ['de', 5], ' ', ['gou', 3], '?'],
+    },
 ]
 
 testCasesValid.forEach(test => {
